@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+  margin-top: 30px;
+  background: rgb(68, 68, 68);
+}
+
+h1, h2, button, #burgerLists,
+h4, label {
+  color: white;
+}
+
+button{
+  background: rgba(0, 0, 0, 0.418);
+  color: white;
+}
+
+#burgerLists {
+  padding: 5px;
+  margin: 5px;
+  background: #f80505af;
+  border-radius: 10px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+#burgerForm {
+  margin-top: 50px;
+}
