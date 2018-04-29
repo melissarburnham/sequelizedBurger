@@ -1,6 +1,6 @@
 # sequelizedBurger
 
-Check out a live version of this site [here](https://fierce-river-44438.herokuapp.com/)!
+Check out a live version of this site [here](https://fast-thicket-69852.herokuapp.com/)!
 
 ## Description
 This application demonstrates a full-stack development using MVC design. 
