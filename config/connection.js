@@ -1,7 +1,8 @@
 // Set up MySQL connection.
 require("dotenv").config();
 var mysql = require("mysql");
-var keys = require("../keys.js")
+var keys = require("../keys.js");
+var Sequelize = require('sequelize');
 var connection;
 
 
@@ -14,7 +15,7 @@ if(process.env.JAWSDB_URL){
     host: "localhost",
     user: "root",
     password: keys.mysql.password,
-    database: "burger_db"
+    database: "sequelizeburger_db"
   });
 };
 

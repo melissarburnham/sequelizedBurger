@@ -1,3 +1,8 @@
+require("dotenv").config();
+
+var db = require("./models");
+var sequelize = require('sequelize');
+
 var express = require("express");
 var bodyParser = require("body-parser");
 
@@ -20,6 +25,8 @@ var routes = require("./controllers/burgersController.js");
 
 app.use(routes);
 
-app.listen(PORT, function() {
-  console.log("Server listening on: http://localhost:" + PORT);
+db.sequelize.sync().then(function() {
+  app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
+  });
 });
