@@ -5,9 +5,9 @@ var router = express.Router();
 var db = require("../models");
 
 router.get("/", function(req, res) {
-  db.Burger.findAll({}).then(function(data) {
+  db.Burger.findAll().then(function(data) {
     var hbsObject = {
-      burgers: data //not sure if this should be burgers, burger, Burger
+      burgers: data 
     };
     console.log(hbsObject);
     res.render("index", hbsObject);
@@ -17,7 +17,7 @@ router.get("/", function(req, res) {
 router.post("/api/burgers", function(req, res) {
   db.Burger.create({
     name: req.body.name,
-    devoured : req.body.devoured
+    devoured : req.body.devoured,
   }).then(function(result) {
     res.json({ id: result.insertId });
     console.log("*******************************************")
